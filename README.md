@@ -73,8 +73,6 @@ The `extra/` directory contains scripts for:
 * Fine-tuning downstream task heads
 * Training and evaluation workflows
 
-These scripts are provided for research and reproducibility purposes.
-
 ---
 
 ## Models Included
@@ -86,10 +84,3 @@ These scripts are provided for research and reproducibility purposes.
 
 ---
 
-## Citation
-
-If you use this repository in your research, please cite the associated publication.
-
-```bibtex
-[Citation to be added]
-```
