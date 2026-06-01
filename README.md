@@ -13,13 +13,34 @@ conda activate geofm
 pip install -r requirements.txt
 ```
 
-## Download Weights and Datasets
+## Download Data and Model Weights
 
-Download the pretrained model weights and datasets from:
+Download the datasets, pretrained model weights, and task-specific checkpoints from:
 
-**[Download Link Here]**
+**[GeoFM Resources](https://adelaideuniversity.box.com/s/b01csoksm2tawebt4obp7a7nr56tkqhn)**
 
-After downloading, update the paths in the commands below as required.
+After downloading, place the files in a local directory and update the dataset and checkpoint paths in the evaluation scripts and example commands below.
+
+The download package contains:
+
+```text
+geofm-resources/
+├── Prithvi_EO_V2_300M.pt
+├── Sentinel-2-Cloud-Mask-Catalogue/
+├── ckpt-distillation-256/
+├── ckpt-cloud-classification-distillation-256/
+├── ckpt-cloud-classification-baseline-1024/
+└── ckpt-cloud-segmentation-distillation-256/
+```
+
+Where:
+
+* `Prithvi_EO_V2_300M.pt` – Original Prithvi v2 foundation model.
+* `ckpt-distillation-256/` – Distilled Prithvi v2 encoder checkpoints (256-dimensional embedding).
+* `ckpt-cloud-classification-distillation-256/` – Cloud classification head trained on the distilled encoder.
+* `ckpt-cloud-classification-baseline-1024/` – Cloud classification head trained on the original Prithvi v2 model.
+* `ckpt-cloud-segmentation-distillation-256/` – Cloud segmentation decoder trained on the distilled encoder.
+* `Sentinel-2-Cloud-Mask-Catalogue/` – Dataset used for cloud classification and cloud segmentation evaluation.
 
 ---
 
@@ -115,13 +136,15 @@ FP (cloud): 1.63
 
 ---
 
-## Additional Training Scripts
+## Training and Reproduction Scripts
 
 The `extra/` directory contains scripts for:
 
 * Prithvi v2 pretraining using Masked Autoencoders (MAE)
 * Dual-MAE knowledge distillation
 * Fine-tuning downstream task heads
+
+These scripts are provided to support reproducibility and further research.
 
 ---
 
@@ -132,6 +155,4 @@ The `extra/` directory contains scripts for:
 | Prithvi v2 Original  | 1024              | Original pretrained Prithvi v2 foundation model  |
 | Distilled Prithvi v2 | 256               | Compact model obtained via Dual-MAE Distillation |
 
-
-
-
+---
