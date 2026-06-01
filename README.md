@@ -106,7 +106,7 @@ python evaluate_cloud_segmentation.py \
 Expected output:
 
 ```text
---- mIoU: 83.84
+mIoU: 83.84
 mean F1: 91.21
 OA: 91.21
 ACC (cloud): 91.21
