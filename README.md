@@ -132,9 +132,6 @@ The `extra/` directory contains scripts for:
 | Prithvi v2 Original  | 1024              | Original pretrained Prithvi v2 foundation model  |
 | Distilled Prithvi v2 | 256               | Compact model obtained via Dual-MAE Distillation |
 
----
 
-[Citation to be added]
-```
 
 
