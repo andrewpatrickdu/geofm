@@ -122,9 +122,6 @@ The `extra/` directory contains scripts for:
 * Prithvi v2 pretraining using Masked Autoencoders (MAE)
 * Dual-MAE knowledge distillation
 * Fine-tuning downstream task heads
-* Training and evaluation workflows
-
-These scripts are provided for research and reproducibility purposes.
 
 ---
 
@@ -137,11 +134,6 @@ These scripts are provided for research and reproducibility purposes.
 
 ---
 
-## Citation
-
-If you use this repository in your research, please cite the associated publication.
-
-```bibtex
 [Citation to be added]
 ```
 
