@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 Download the datasets, pretrained model weights, and task-specific checkpoints from:
 
-**[GeoFM Resources]([https://adelaideuniversity.box.com/s/vjzkyxhcntrw2vksj5ctlfwbtimq4rm5])**
+**[GeoFM Resources](https://adelaideuniversity.box.com/s/vjzkyxhcntrw2vksj5ctlfwbtimq4rm5)**
 
 After downloading, place the files in a local directory and update the dataset and checkpoint paths in the evaluation scripts and example commands below.
 
